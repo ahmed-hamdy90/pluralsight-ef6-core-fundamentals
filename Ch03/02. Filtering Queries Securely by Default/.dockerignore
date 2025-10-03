@@ -1,0 +1,11 @@
+global.json
+DockerConfig/
+
+PublisherConsole/bin/
+PublisherConsole/obj/
+
+PublisherDomain/bin/
+PublisherDomain/obj/
+
+PublisherData/bin/
+PublisherData/obj/
