@@ -1,0 +1,39 @@
+# version: "3.9" # No Need version now =>  `version` is obsolete  
+
+services:
+  mssql:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    container_name: mssqlserver_container
+    user: root
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: ${MSSQL_SA_PASSWORD}
+    ports:
+      - "1433:1433"
+    volumes:
+      - ./DockerConfig/Sqlserver/data:/var/opt/mssql/data
+      - ./DockerConfig/Sqlserver/log:/var/opt/mssql/log
+      - ./DockerConfig/Sqlserver/secrets:/var/opt/mssql/secrets
+    healthcheck: # Check if SQL Server is ready
+      test: ["CMD-SHELL", "/opt/mssql-tools18/bin/sqlcmd -S localhost -U SA -P \"${MSSQL_SA_PASSWORD}\" -Q 'SELECT 1' -C"]
+      interval: 10s # Check every 10 seconds
+      timeout: 5s # Timeout after 5 seconds
+      retries: 5 # Retry 5 times
+      start_period: 30s # Give SQL Server some time to start initially
+    networks:
+      ef5corenetwork:
+        aliases:
+          - mssql
+
+  ef5coreconsole:
+    build: .
+    container_name: ef5coreconsole_container
+    depends_on:
+      mssql:
+        condition: service_healthy # Only start when SQL Server is healthy
+    networks:
+      - ef5corenetwork
+
+networks:
+  ef5corenetwork:
+    driver: bridge
