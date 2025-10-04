@@ -1,0 +1,7 @@
+global.json
+
+PublisherConsole/bin/
+PublisherConsole/obj/
+
+PublisherDomain/bin/
+PublisherDomain/obj/

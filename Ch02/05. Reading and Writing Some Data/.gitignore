@@ -20,8 +20,15 @@ x86/
 bld/
 [Bb]in/
 [Oo]bj/
-[Ll]og/
-[Ll]ogs/
+#[Ll]og/
+#[Ll]ogs/
+
+PublisherConsole/[Bb]in/
+PublisherConsole/[Oo]bj/
+PublisherData/[Bb]in/
+PublisherData/[Oo]bj/
+PublisherDomain/[Bb]in/
+PublisherDomain/[Oo]bj/
 
 # .NET Core
 project.lock.json
@@ -52,3 +59,8 @@ CodeCoverage/
 *.VisualState.xml
 TestResult.xml
 nunit-*.xml
+
+# environment
+.env
+.env.*
+!.env.example
