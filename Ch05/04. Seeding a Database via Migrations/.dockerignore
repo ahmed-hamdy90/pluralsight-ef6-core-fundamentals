@@ -1,0 +1,18 @@
+global.json
+DockerConfig/
+
+PublisherConsole/bin/
+PublisherConsole/obj/
+
+PublisherDomain/bin/
+PublisherDomain/obj/
+
+PublisherData/bin/
+PublisherData/obj/
+
+.config/
+CLI\ Commands/
+
+docker-compose.development.yaml
+docker-compose.yaml*
+docker-compose.*.yaml

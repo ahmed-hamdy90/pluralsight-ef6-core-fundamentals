@@ -1,0 +1,23 @@
+FROM mcr.microsoft.com/dotnet/sdk:6.0
+
+LABEL org.opencontainers.image.authors="ahmedhamdy20@gmail.com"
+
+## Install EF tool Global
+RUN dotnet tool install dotnet-ef --version 6.0.36 --global
+
+ENV PATH="/root/.dotnet/tools:$PATH"
+
+## Copy Project and Run it
+ENV ASPNETCORE_ENVIRONMENT=Development
+
+WORKDIR /src
+
+COPY . .
+
+RUN dotnet restore && dotnet build
+
+## Run Project As EntryPoint In case Needs to Run project
+# ENTRYPOINT [ "dotnet", "run", "--project", "PublisherConsole/"]
+
+## To keep container run to use EF tool As Above will not able to wait and close Image direct
+CMD ["tail", "-f", "/dev/null"]
