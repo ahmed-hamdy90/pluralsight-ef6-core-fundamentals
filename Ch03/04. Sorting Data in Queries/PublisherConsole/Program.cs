@@ -19,7 +19,7 @@ using PubContext _context = new PubContext();
 
 void QueryFilters()
 {
-    // Fitler with LIKE for Name
+    // Filter with LIKE for Name
 
     // First Way: Use Native EF.Function
     // var authors = _context.Authors.Where(author => EF.Functions.Like(author.LastName, "L%")).ToList();

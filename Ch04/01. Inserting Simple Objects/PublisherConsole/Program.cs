@@ -21,6 +21,9 @@ void InsertAuthor()
 {
     var author = new Author { FirstName = "Frank", LastName = "Herbert" };
 
+    // Original Add Authors Db set
+    // _context.Authors.Add(author);
+
     // Now we Can Add Author Without Depends on Authos DbSet
     // EF DbContext will check the give Entity and define which DbSet needed to be used
     // Also Depends on Entity's Status

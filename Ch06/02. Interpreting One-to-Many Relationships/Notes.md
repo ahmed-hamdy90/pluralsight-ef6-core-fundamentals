@@ -3,7 +3,7 @@
 
 1. Create List or ICollection form Children Entities under Parent Entity Only, There is no need any details under Child Entity
 
-Note: Automatic EF define Foreign key called `AuthorId`
+***Note:*** Automatic EF define Foreign key called `AuthorId`
 
 ```csharp
 namespace PublisherDomain;

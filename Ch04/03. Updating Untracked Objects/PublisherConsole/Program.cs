@@ -37,6 +37,8 @@ void SaveThatAuthor(Author author)
 {
     using var anotherShortLivedContext = new PubContext();
 
+    // As the new context not have trak given entity's status
+    // So it will update all fields even not updated
     anotherShortLivedContext.Authors.Update(author);
     anotherShortLivedContext.SaveChanges();
 }
