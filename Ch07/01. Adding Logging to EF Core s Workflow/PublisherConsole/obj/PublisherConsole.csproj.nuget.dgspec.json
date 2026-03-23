@@ -1,0 +1,190 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/ahmedhamdy/QuickLearningCourses/EF Core 6 Fundamentals/CurrentProject/PublisherConsole/PublisherConsole.csproj": {}
+  },
+  "projects": {
+    "/home/ahmedhamdy/QuickLearningCourses/EF Core 6 Fundamentals/CurrentProject/PublisherConsole/PublisherConsole.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/ahmedhamdy/QuickLearningCourses/EF Core 6 Fundamentals/CurrentProject/PublisherConsole/PublisherConsole.csproj",
+        "projectName": "PublisherConsole",
+        "projectPath": "/home/ahmedhamdy/QuickLearningCourses/EF Core 6 Fundamentals/CurrentProject/PublisherConsole/PublisherConsole.csproj",
+        "packagesPath": "/home/ahmedhamdy/.nuget/packages/",
+        "outputPath": "/home/ahmedhamdy/QuickLearningCourses/EF Core 6 Fundamentals/CurrentProject/PublisherConsole/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/ahmedhamdy/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "/usr/lib/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/home/ahmedhamdy/QuickLearningCourses/EF Core 6 Fundamentals/CurrentProject/PublisherData/PublisherData.csproj": {
+                "projectPath": "/home/ahmedhamdy/QuickLearningCourses/EF Core 6 Fundamentals/CurrentProject/PublisherData/PublisherData.csproj"
+              },
+              "/home/ahmedhamdy/QuickLearningCourses/EF Core 6 Fundamentals/CurrentProject/PublisherDomain/PublisherDomain.csproj": {
+                "projectPath": "/home/ahmedhamdy/QuickLearningCourses/EF Core 6 Fundamentals/CurrentProject/PublisherDomain/PublisherDomain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/6.0.136/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/ahmedhamdy/QuickLearningCourses/EF Core 6 Fundamentals/CurrentProject/PublisherData/PublisherData.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/ahmedhamdy/QuickLearningCourses/EF Core 6 Fundamentals/CurrentProject/PublisherData/PublisherData.csproj",
+        "projectName": "PublisherData",
+        "projectPath": "/home/ahmedhamdy/QuickLearningCourses/EF Core 6 Fundamentals/CurrentProject/PublisherData/PublisherData.csproj",
+        "packagesPath": "/home/ahmedhamdy/.nuget/packages/",
+        "outputPath": "/home/ahmedhamdy/QuickLearningCourses/EF Core 6 Fundamentals/CurrentProject/PublisherData/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/ahmedhamdy/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "/usr/lib/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/home/ahmedhamdy/QuickLearningCourses/EF Core 6 Fundamentals/CurrentProject/PublisherDomain/PublisherDomain.csproj": {
+                "projectPath": "/home/ahmedhamdy/QuickLearningCourses/EF Core 6 Fundamentals/CurrentProject/PublisherDomain/PublisherDomain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.36, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.36, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/6.0.136/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/ahmedhamdy/QuickLearningCourses/EF Core 6 Fundamentals/CurrentProject/PublisherDomain/PublisherDomain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/ahmedhamdy/QuickLearningCourses/EF Core 6 Fundamentals/CurrentProject/PublisherDomain/PublisherDomain.csproj",
+        "projectName": "PublisherDomain",
+        "projectPath": "/home/ahmedhamdy/QuickLearningCourses/EF Core 6 Fundamentals/CurrentProject/PublisherDomain/PublisherDomain.csproj",
+        "packagesPath": "/home/ahmedhamdy/.nuget/packages/",
+        "outputPath": "/home/ahmedhamdy/QuickLearningCourses/EF Core 6 Fundamentals/CurrentProject/PublisherDomain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/ahmedhamdy/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "/usr/lib/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/6.0.136/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
