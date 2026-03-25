@@ -19,7 +19,7 @@ using PubContext _context = new PubContext();
 
 void QueryFilters()
 {
-    // Fitler with LIKE for Name
+    // Filter with LIKE for Name
 
     // First Way: Use Native EF.Function
     // var authors = _context.Authors.Where(author => EF.Functions.Like(author.LastName, "L%")).ToList();
@@ -130,7 +130,7 @@ void QueryAggregate()
 
     Console.WriteLine($"{firstAuthor.FirstName} {firstAuthor.LastName}");
 
-    // Second Use LINQ Methos to Get First Author After Sorting them
+    // Second Use LINQ Methods to Get First Author After Sorting them
     var firstAuthorDescending =
         _context.Authors.OrderByDescending(author => author.FirstName)
                         .FirstOrDefault(author => author.LastName == filter1);
